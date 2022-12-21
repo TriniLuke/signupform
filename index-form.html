@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-style.css">
+    <script src="form-valid.js" defer></script>
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="header">
+    <div class="logo">MANGO STORE</div>
+    <p class="background-link">Image by <a href="https://pixabay.com/users/5023100-5023100/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2261027">Matteo Z.</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2261027">Pixabay</a></p>
+    </div>
+
+    <div class="container">
+        <form action="" method="post" class="signup">
+            <p class="para">Complete this simple signup for and get access 
+                to all of your great products. Also get access
+                to exclusive members only deals and coupons.
+            </p>
+            <legend class="legend">Let's do it!</legend>
+            <div class="form-box" id="full-name">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" class="field" name="first-name">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" class="field" name="last-name">
+            </div>
+            <div class="form-box" id="contact">
+                <label for="mail">EMAIL</label>
+                <input type="email" class="field" name="mail">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="tel" class="field" name="phone-number">
+            </div>
+            <div class="form-box" id="password">
+                <label for="user-password">PASSWORD</label>
+                <input type="password" class="password" name="user-password" required minlength="8">
+                <label for="user-password-confirm">CONFIRM PASSWORD</label>
+                <input type="password" class="confirm-password" name="user-password-confirm" required minlength="8">
+                <br>
+                <span id="wrong-pass-alert"></span>
+            </div>
+            //Function called
+            <button type="submit" class="button" onclick="return Validate()">Create Account</button>
+
+            <p class="para">
+                Already have an account? <a class="link" href="">Log In</a>
+            </p>
+         </form>
+    </div>
+</body>
+</html>
